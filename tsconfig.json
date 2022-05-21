@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES6",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -8,12 +8,13 @@
     "baseUrl": "./",
     "strict": true,
     "lib": [
-      "esnext"
+      "ES2020",
+      
     ],
     "noImplicitAny": true,
     "esModuleInterop": true,
     "strictNullChecks": true,
-    "allowJs": true,
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "noEmitOnError": true,
