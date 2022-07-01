@@ -17,7 +17,7 @@ declare global {
     rem(rhs: number): number;
   }
 }
-export { };
+export {};
 
 Number.prototype.roundTo = function roundTo(decimalPlaces) {
   return Number(

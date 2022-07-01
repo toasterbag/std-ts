@@ -1,13 +1,19 @@
 {
-  "name": "@dave/typescript-std",
+  "name": "@toasterbag/std-ts",
   "version": "0.1.1",
   "main": "dist/index.js",
   "license": "GPLv3",
+  "repository": {
+    "url": "git://github.com/toasterbag/std-ts.git"
+  },
   "scripts": {
     "build": "tsc && tscpaths -p tsconfig.json -s ./src -o ./dist",
-    "lint": "eslint '*/**/*.{js,ts}' --quiet --fix"
+    "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
+    "test:open": "peeky open",
+    "test": "peeky run"
   },
   "devDependencies": {
+    "@peeky/test": "^0.13.5",
     "@types/node": "^14.14.33",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
